@@ -1,0 +1,212 @@
+/*--акцент синий #2196F3 ---*/
+/*--основной цвет  #212121---*/
+/*--белый #FFFFFF---*/
+/*--вторичный цвет серый #757575 ---*/
+/*--вторичный цвет фона #F5F4FA ---*/
+
+:root{
+   --main-text-color:#212121;
+   --blue-color:#2196F3;
+   --white-color:#FFFFFF;
+   --grey-color:#757575;
+   --footer-hero-color:#2F303A;
+   --second-backgraund-color:#F5F4FA; 
+   --wtile-second-color:rgba(255, 255, 255, 0.6)
+}
+body {
+   background-color: white;
+   color: var(--main-text-color);
+   font-family: 'Roboto',sans-serif
+}
+.logo {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height:1.19;
+   color:var(--blue-color);
+   letter-spacing: 0.03em;
+   }
+.list{
+   list-style: none;
+}
+.site-nav-link {
+   color:var(--main-text-color) ;
+   font-weight: 500;
+   font-size: 14px;
+   line-height:1.14;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+}
+.contact-nav-link {
+   color:var(--grey-color) ;
+   font-weight: 500;
+   font-size: 14px;
+   line-height:1.14;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+}
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contact-nav-link:hover,
+.contact-nav-link:focus
+{
+   color:var(--blue-color);
+}
+.site-nav-link.current{
+   color:var(--blue-color) ;
+}
+.section{
+   color: var(--main-text-color);
+}
+.section-title{
+   color: var(--main-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height:1.17;
+   text-align: center;
+}
+
+/* hero*/
+.hero-title {
+   color:var(--white-color);
+   font-weight: 900;
+   font-size: 44px;
+   line-height:1.4;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+}
+.hero {
+   background-color:var(--footer-hero-color);
+}
+.details-title{
+   color: var(--main-text-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height:1.14;
+   text-transform: uppercase;
+   letter-spacing: 0.03em;
+}
+.details-about{
+   color: var(--grey-color);
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+
+/* button*/
+.button {
+   font-family: inherit;
+   color:var(--white-color) ;
+   background-color:var(--blue-color);
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.85;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   border: none;
+   border-radius: 4px ; 
+}
+.button:hover,
+.button:focus{
+   background:#188CE8;
+}
+
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+ }
+.button-portfolio{
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   text-align: center;
+   border-radius: 4px ; 
+   border:none;
+ }
+.button-portfolio:hover,
+.button-portfolio:focus
+  {
+   color:var(--white-color) ;
+   background-color:var(--blue-color)
+  }
+.adress-link {
+   text-decoration: none;
+   color:var(--white-color);
+   font-style: normal;
+   letter-spacing: 0.03em;
+   font-size: 14px;
+   line-height: 1.71;
+}
+.adress-link-color {
+      text-decoration: none;
+      font-style: normal;
+      letter-spacing: 0.03em;
+      font-size: 14px;
+      line-height: 1.71;
+      color:var(--wtile-second-color);
+   }
+
+.adress-link:hover,
+.adress-link:focus,
+.adress-link-color:hover,
+.adress-link-color:focus
+   {
+      color:var(--blue-color) ;
+   }
+
+
+.link{
+   text-decoration: none;
+   color:currentColor;
+}
+.li{
+   text-align: center;
+}
+.footer {
+   background-color:var(--footer-hero-color);}
+
+.portfolio-name {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em
+   }
+.portfolio-list {
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.03em;
+   color:var(--grey-color)
+   }
+.team-name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center
+}
+.team-title {
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   color:var(--grey-color);
+   letter-spacing: 0.03em;
+}
+.team{
+   background-color: var(--white-color)
+}
+.ourteam{
+   background-color: var(--second-backgraund-color)
+}
