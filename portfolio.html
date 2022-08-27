@@ -22,16 +22,16 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <span class="logo">Web</span
-          ><span class="logo" style="color: var(--main-text-color)">Studio</span>
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="site-nav-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="site-nav-link current">Портфоліо</a></li>
-            <li><a href="" class="site-nav-link">Контакти</a></li>
-          </ul>
-        </nav>
+      <div class="container heared-container">
+        <a href="./index.html" class="link"
+          ><span class="logo">Web</span
+          ><span class="logo" style="color: var(--main-text-color)">Studio</span></a
+        >
+        <ul class="site-nav list">
+          <li><a href="./index.html" class="site-nav-link">Студія</a></li>
+          <li><a href="" class="site-nav-link current">Портфоліо</a></li>
+          <li><a href="" class="site-nav-link">Контакти</a></li>
+        </ul>
         <ul class="contact-nav list">
           <li
             ><a class="contact-nav-link" href="mailto:into@devstudio.com">into@devstudio.com</a></li
@@ -41,10 +41,10 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="section">
+      <section class="section">
+        <div class="container">
           <h1 class="visually-hidden"> заголовок портфоліо</h1>
-          <ul class="list">
+          <ul class="list portfolio-menu">
             <li><button class="button-portfolio" type="button">Усі</button></li>
             <li><button class="button-portfolio" type="button">Веб-сайти</button></li>
             <li><button class="button-portfolio" type="button">Додатки</button></li>
@@ -55,8 +55,10 @@
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-techno.jpg" alt="Технокряк" width="370" />
+                <div class="items-about">
                 <h2 class="portfolio-name">Технокряк</h2>
                 <p class="portfolio-list">Веб-сайт</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
@@ -66,6 +68,7 @@
                   alt="Постер New Orlean vs Golden Star"
                   width="370"
                 />
+                <div class="items-about">
                 <h2 class="portfolio-name">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio-list">Дизайн</p>
               </a>
@@ -73,6 +76,8 @@
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-seafood.jpg" alt="Ресторан Seafood" width="370" />
+                
+                <div class="items-about">
                 <h2 class="portfolio-name">Ресторан Seafood</h2>
                 <p class="portfolio-list">Додаток</p>
               </a>
@@ -80,15 +85,20 @@
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-prime.jpg" alt="Проєкт Prime" width="370" />
+                <div class="items-about">
                 <h2 class="portfolio-name">Проєкт Prime</h2>
                 <p class="portfolio-list">Маркетинг</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-boxes.jpg" alt="Проєкт Boxes" width="370" />
-                <h2 class="portfolio-name">Проєкт Boxes</h2>
+                
+                <div class="items-about">
+                  <h2 class="portfolio-name">Проєкт Boxes</h2>
                 <p class="portfolio-list">Додаток</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
@@ -98,8 +108,11 @@
                   alt="Inspiration has no Borders"
                   width="370"
                 />
-                <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                
+                <div class="items-about">
+                  <h2 class="portfolio-name">Inspiration has no Borders</h2>
                 <p class="portfolio-list">Веб-сайт</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
@@ -109,46 +122,58 @@
                   alt="Видання Limited Edition"
                   width="370"
                 />
-                <h2 class="portfolio-name">Видання Limited Edition</h2>
+                
+                <div class="items-about">
+                  <h2 class="portfolio-name">Видання Limited Edition</h2>
                 <p class="portfolio-list">Дизайн</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-lab.jpg" alt="Проєкт LAB" width="370" />
-                <h2 class="portfolio-name">Проєкт LAB</h2>
+                
+                <div class="items-about">
+                  <h2 class="portfolio-name">Проєкт LAB</h2>
                 <p class="portfolio-list">Маркетинг</p>
+              </div>
               </a>
             </li>
             <li class="portfolio-items">
               <a class="link" href="https://goit.ua">
                 <img src="./images/portfolio-business.jpg" alt="Growing Business" width="370" />
-                <h2 class="portfolio-name">IGrowing Business</h2>
+                <div class="items-about">
+                  <h2 class="portfolio-name">IGrowing Business</h2>
                 <p class="portfolio-list">Додаток</p>
+              </div>
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <span class="logo">Web</span
-      ><span class="logo" style="color: var(--white-color)">Studio</span>
-      <address>
-        <ul class="list">
-          <li
-            ><a class="adress-link" href="https://goo.gl/maps/srSNwpNVW98ARK6E7"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            ></li
-          >
-          <li
-            ><a class="adress-link-color" href="mailto:into@devstudio.com"
-              >into@devstudio.com</a
-            ></li
-          >
-          <li><a class="adress-link-color" href="tel:+380961111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="link"
+          ><span class="logo">Web</span
+          ><span class="logo" style="color: var(--white-color)">Studio</span></a
+        >
+        <address>
+          <ul class="list">
+            <li
+              ><a class="adress-link" href="https://goo.gl/maps/srSNwpNVW98ARK6E7">
+                м. Київ, пр-т Лесі Українки, 26</a
+              ></li
+            >
+            <li
+              ><a class="adress-link-color" href="mailto:into@devstudio.com"
+                >into@devstudio.com</a
+              ></li
+            >
+            <li><a class="adress-link-color" href="tel:+380961111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
