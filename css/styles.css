@@ -96,7 +96,7 @@ img {
   display: flex;
   gap: 50px;
   align-items: center;
-}
+  }
 .contact-nav {
   display: flex;
   gap: 50px;
@@ -275,6 +275,9 @@ img {
   background-color: var(--footer-hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-site{
+   padding-top: 20px;
 }
 
 .portfolio-items {
