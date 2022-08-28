@@ -6,11 +6,6 @@
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 :root {
   --main-text-color: #212121;
   --blue-color: #2196f3;
@@ -22,13 +17,14 @@ html {
   --header-underline:#ececec;
   --color-border-card:#EEEEEE;
 }
+.header-underline{
+   border-bottom: 1px solid var(--header-underline);
+}
 body {
-  margin: 0;
   background-color: white;
   color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
-  width: 1600px;
-}
+  }
 h1,
 h2,
 h3,
@@ -41,7 +37,10 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -52,8 +51,7 @@ img {
 .heared-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--header-underline);
-}
+  }
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -75,8 +73,8 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-nav-link {
   color: var(--grey-color);
@@ -87,8 +85,8 @@ img {
   text-decoration: none;
 
   display: block;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav {
   margin-left: 93px;
@@ -129,7 +127,7 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* hero*/
@@ -141,15 +139,16 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 30px;
+  /*padding: 0;
+  margin-top: 0;*/
+  width: 696px;
+ margin: 0 auto;
 }
 .hero {
   background-color: var(--footer-hero-color);
 
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0;
 }
 
 .details-title {
@@ -160,7 +159,7 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .details-about {
   color: var(--grey-color);
@@ -193,6 +192,7 @@ img {
   border-radius: 4px;
   min-width: 216px;
   padding: 10px 32px;
+  margin-top: 30px;
 }
 .button:hover,
 .button:focus {
@@ -214,10 +214,8 @@ img {
 .portfolio-menu {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
-  gap: 6px;
-  padding-bottom: 16px;
-}
+  gap: 8px;
+ }
 
 .button-portfolio {
   font-family: inherit;
@@ -248,6 +246,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--wtile-second-color);
+  margin-top: 9px;
 }
 
 .adress-link:hover,
@@ -285,7 +284,6 @@ img {
  /* background-color: aqua;*/
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var( --color-border-card);
 }
 .portfolio-items:nth-child(3n) {
   margin-right: 0;
@@ -298,10 +296,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   /*background-color: blueviolet;*/
-  padding-top: 34px;
+  margin-top: 50px;
 }
 .items-about{
    padding: 20px 24px;
+   border-bottom: 1px solid var(--color-border-card);
+   border-right: 1px solid var(--color-border-card);
+   border-left: 1px solid var(--color-border-card);
 }
 .portfolio-name {
   font-weight: 700;
@@ -321,8 +322,8 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  /*padding-top: 30px;*/
+  margin-bottom: 10px;
 }
 .team-title {
   font-size: 16px;
@@ -330,7 +331,7 @@ img {
   text-align: center;
   color: var(--grey-color);
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 .team {
   display: flex;
@@ -342,6 +343,10 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-about {
+   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .ourteam {
