@@ -256,6 +256,10 @@ img {
   color: var(--blue-color);
 }
 
+.navig{
+  display: flex;
+  align-items: center;
+}
 .link {
   padding: 0;
   margin: 0;
