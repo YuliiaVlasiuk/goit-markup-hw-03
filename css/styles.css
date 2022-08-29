@@ -90,7 +90,6 @@ img {
 }
 .site-nav {
   margin-left: 93px;
-  margin-right: auto;
   display: flex;
   gap: 50px;
   align-items: center;
@@ -99,6 +98,7 @@ img {
   display: flex;
   gap: 50px;
   align-items: center;
+  margin-left: auto;
 }
 .site-nav-link:hover,
 .site-nav-link:focus,
